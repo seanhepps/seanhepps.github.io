@@ -29,7 +29,7 @@ paginate: 20
 
 #### Site
 title : Sean's blog
-tagline: 我会不在成长过程中经历的事情总结记录下来
+tagline: 我会把成长过程中经历的事情总结记录下来
 assets: /assets
 url:
 baseurl:
@@ -39,9 +39,9 @@ language: zh-CN    ## blog site languages: en, zh-CN, zh-TW, de
 
 #### Menu
 menu:
-  Home: /
-  Archives: /archives
-  About: /about
+  主页: /
+  归档: /archives
+  关于我: /about
 ## you can create `tags` and `categories` folders (I had created them already).
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -55,7 +55,6 @@ widgets:
 - tag
 - tagcloud
 - links
-- douban
 - github-card
 - rss
 ## provide seven widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo,douban
@@ -111,6 +110,7 @@ toc:
 #### Links
 links:
   谷歌: https://www.google.com
+  百度: https://www.baidu.com
   码农圈: https://coderq.com
 
 #### Comment
@@ -164,7 +164,7 @@ tinysou_search:     ## http://tinysou.com/
   id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
 simple_jekyll_search:
   enable: true
-  fulltext: false
+  fulltext: true
 
 gems:
  - jemoji

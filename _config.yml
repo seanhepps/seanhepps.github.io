@@ -28,8 +28,8 @@ defaults:
 paginate: 20
 
 #### Site
-title : Jekyll Jacman
-tagline: A fresh looking and responsive theme for Jekyll
+title : Sean's blog
+tagline: 我会不在成长过程中经历的事情总结记录下来
 assets: /assets
 url:
 baseurl:
@@ -110,8 +110,8 @@ toc:
 
 #### Links
 links:
+  谷歌: https://www.google.com
   码农圈: https://coderq.com
-  Jark's Blog: http://wuchong.me
 
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong      your duoshuo short name.       website: http://duoshuo.com

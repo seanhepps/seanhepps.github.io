@@ -33,6 +33,26 @@ if (page.archive){
 {% assign icon = 'tag' %}
 {% endif %}
 
+
+<div id="main" class="archive-part clearfix">
+  <div id="archive-page">
+  {% for post in site.posts %}
+  {% assign item = post %}
+  {% assign index = true %}
+  {% include _partial/article_row.html %}
+  {% endfor %}
+<!--
+<% if (page.total > 1){ %>
+  <nav id="page-nav" class="clearfix archive-nav">
+    <%- paginator({
+      prev_text: '<span></span>Prev',
+      next_text: 'Next<span></span>'
+    }) %>
+  </nav>
+<% } %>
+-->
+  </div>
+</div>
 <div class="archive-title" >
   <h2 class="{{ icon }}-icon"><span class='archive-folder'>{{ title }}</span></h2>
   {% if page.layout == 'archives' %}
@@ -86,23 +106,4 @@ if (page.archive){
  </ul>
  {% endif %}
  
-</div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
-  {% for post in site.posts %}
-  {% assign item = post %}
-  {% assign index = true %}
-  {% include _partial/article_row.html %}
-  {% endfor %}
-<!--
-<% if (page.total > 1){ %>
-  <nav id="page-nav" class="clearfix archive-nav">
-    <%- paginator({
-      prev_text: '<span></span>Prev',
-      next_text: 'Next<span></span>'
-    }) %>
-  </nav>
-<% } %>
--->
-  </div>
 </div>

@@ -3,6 +3,7 @@ title: 常用git命令清单列表
 layout: post
 tags: []
 category: git
+description: 常用git命令，包含clone pull push add commit status checkout branch diff fetch merge init rm rename mv tag log show revert stash reset等常用命令
 ---
 搭建了博客之后，就赶紧整理了一下常用的命令省的忘了找不到
 ## 新建初始化仓库

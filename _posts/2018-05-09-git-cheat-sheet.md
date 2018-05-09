@@ -119,7 +119,7 @@ git branch --merged
 显示所有未合并到当前分支的分支
 git branch --no-merged
 ```
-###删除分支
+### 删除分支
 ```
 本地分支改名
 git branch -m master master_copy
@@ -134,7 +134,7 @@ git branch -D hotfixes/BJVEP933
 git push origin --delete [branch-name]
 git branch -dr [remote/branch]
 ```
-###切换分支
+### 切换分支
 ```
 切换到指定分支，并更新工作区
 git checkout [branch-name]

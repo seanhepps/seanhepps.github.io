@@ -31,8 +31,8 @@ paginate: 20
 title : Sean's blog
 tagline: 我会把成长过程中经历的事情总结记录下来
 assets: /assets
-url:
-baseurl: "/"
+url: /
+baseurl: ""
 
 #### Language
 language: zh-CN    ## blog site languages: en, zh-CN, zh-TW, de

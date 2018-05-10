@@ -322,6 +322,9 @@ git pull [remote] [branch]
 上传本地指定分支到远程仓库
 git push [remote] [branch]
 
+上传本地指定分支到远程仓库并且建立追踪关系 和--set-upstream 相同
+git push -u [remote] [branch]
+
 强行推送当前分支到远程仓库，即使有冲突
 git push [remote] --force
 

@@ -17,12 +17,10 @@ if (page.archive){
 };
 %>
 -->
-
 {% if page.layout == 'archives' %}
 {% assign title = lang.archive_a %}
 {% assign icon = 'archive' %}
 {% endif %}
-
 {% if page.layout == 'categories' %}
 {% assign title = lang.categories %}
 {% assign icon = 'category' %}
@@ -32,8 +30,6 @@ if (page.archive){
 {% assign title = lang.tags %}
 {% assign icon = 'tag' %}
 {% endif %}
-
-
 <div id="main" class="archive-part clearfix">
   <div id="archive-page">
   {% for post in site.posts %}
@@ -71,8 +67,7 @@ if (page.archive){
     {% assign count = 1 %}
     {% else %}
     {% assign count = count | plus: 1 %}
-    {% endif %}
-        
+    {% endif %}      
     </li>
     {% endfor %}
     </ul>

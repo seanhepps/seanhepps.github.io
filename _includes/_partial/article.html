@@ -8,7 +8,7 @@
         {% if item.excerpt and index %}
         {{ item.excerpt }}
         {% else %}
-        {{ item.content }}
+        {{ item.content | slice: 0, 25 | strip | strip_html }}
         {% endif %}
         
         <p class="article-more-link">

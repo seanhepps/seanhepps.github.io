@@ -177,7 +177,7 @@ $(document).ready(function(){
 });
 </script>
 {% endif %}
-
+{%- if page.comments != false -%}
 {% if site.duoshuo_shortname %}
 <script type="text/javascript">
   var duoshuoQuery = {short_name:"{{ site.duoshuo_shortname }}"};
@@ -210,6 +210,7 @@ var disqus_shortname = '{{ site.disqus_shortname }}';
 }());
 </script>
 {% endif %}
+{%- endif -%}
 {% if site.yungentie_productkey and page.layout == 'default' %}
 <!-- JavaScript 配置 -->
 <script>var yunModuleEnv = true;</script>

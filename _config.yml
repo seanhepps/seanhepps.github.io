@@ -29,7 +29,7 @@ paginate: 20
 
 #### Site
 title : Sean's blog
-tagline: 我会把成长过程中经历的事情总结记录下来
+tagline: 从零到一的过程
 assets: /assets
 url: /
 baseurl: ""

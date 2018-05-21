@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: is_string instanceof is_array is_int is_float is_object is_*系列函数的效率
 tags: [php]
 category: php

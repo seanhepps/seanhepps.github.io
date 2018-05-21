@@ -2,7 +2,7 @@
 layout: post
 title: css flex弹性布局
 category: css
-tag: [css,html,display,flex,弹性布局]
+tags: [css,html,display,flex,弹性布局]
 ---
 css display flex弹性布局 对flex-direction flex-wrap flex-flow justify-content align-items align-content等属性用法介绍
 

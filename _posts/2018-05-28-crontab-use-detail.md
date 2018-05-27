@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: Linux crontab使用详解
 tags: [Linux]
 category: linux

@@ -77,6 +77,7 @@ class Ipad extends Brand {
 ```
 
 laravel官网上面copy的例子简单实用
+
 AbstractFactory.php
 ```php
 <?php
@@ -90,17 +91,6 @@ namespace DesignPatterns\Creational\AbstractFactory;
 abstract class AbstractFactory
 {
     abstract public function createText(string $content): Text;
-}
-<?php
-
-namespace DesignPatterns\Creational\AbstractFactory;
-
-class JsonFactory extends AbstractFactory
-{
-    public function createText(string $content): Text
-    {
-        return new JsonText($content);
-    }
 }
 ```
 JsonFactory.php

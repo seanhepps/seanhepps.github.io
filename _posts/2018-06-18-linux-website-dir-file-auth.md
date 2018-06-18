@@ -7,7 +7,7 @@ category: linux
 linux服务器设置网站目录文件的权限，以使网站更安全
 
 
-apache的允许用户为apache
+apache的运行用户为apache
 nginx和php-fpm运行用户为www
 我们的网站html目录所属者为admin用户
 ## 修改用户组

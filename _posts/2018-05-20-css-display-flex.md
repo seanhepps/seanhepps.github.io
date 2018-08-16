@@ -8,11 +8,11 @@ css display flex弹性布局 对flex-direction flex-wrap flex-flow justify-conte
 
 
 在开发前端页面时查找关于flex相关信息时看到了阮一峰老师写的关于flex布局的讲解，让人豁然开朗。所以我想把理解的转成自己的话记录下来。感谢阮一峰老师的文章。
-[阮老师的原文地址](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+[阮老师的原文地址](https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 图片元素copy阮老师的哈！！！
 
 flex属性在线实验网站
-[英文的在线的](http://the-echoplex.net/flexyboxes/)
+[英文的在线的](https://the-echoplex.net/flexyboxes/)
 [阮老师的博客评论中看到的](https://xluos.github.io/demo/flexbox/)
 
 ## flex与传统的区别
@@ -37,7 +37,7 @@ row-reverse 子元素从右到左排列
 column 子元素从上到下排列
 column 子元素从下到上排列
 ```
-![阮老师的图片](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071005.png)
+![阮老师的图片](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015071005.png)
 ### 2、flex-wrap 是否换行 上下位置
 ```
 .wrapper{
@@ -48,7 +48,7 @@ wrap 正常的换行 超过内容下一行开始
 wrap-reverse 和wrap相反 超过内容在最上面
 ```
 wrap-reverse方式
-![阮老师的图片](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071009.jpg)
+![阮老师的图片](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015071009.jpg)
 ### 3、flex-flow 前面两个的简写
 ```
 .wrapper {
@@ -66,7 +66,7 @@ center 居中
 space-between 两端对齐
 space-around 每个子元素两侧的间隔相等。所以，子元素之间的间隔比子元素与边框的间隔大一倍
 ```
-![阮老师的图片](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071010.png)
+![阮老师的图片](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015071010.png)
 ### 5、align-items 垂直对其方式
 ```
 .wrapper {
@@ -78,7 +78,7 @@ center：中点对齐 元素上下居中。
 baseline: 子元素的第一行文字的基线对齐。
 stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
 ```
-![阮老师的图片](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071011.png)
+![阮老师的图片](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015071011.png)
 ### 6、align-content 多个子元素的对齐方式
 该属性是对有多行子元素的排列方式设置，如果只有一行则无效
 ```
@@ -92,7 +92,7 @@ space-between：上下对齐，子元素之间的间隔平均分布 justify-cont
 space-around：每个子元素两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。justify-content属性的垂直版space-around
 stretch（默认值）：占满整个盒子（可能会使元素拉伸）。
 ```
-![阮老师的图片](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071012.png)
+![阮老师的图片](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015071012.png)
 ## 6个子元素属性
 对父级元素设置成`display: flex;`后子元素也会有几个可选属性对子元素进行单独的控制
 ### 1、order 子元素的排列顺序
@@ -102,7 +102,7 @@ stretch（默认值）：占满整个盒子（可能会使元素拉伸）。
   order: <int>;
 }
 ```
-![阮老师的图片](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071013.png)
+![阮老师的图片](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015071013.png)
 ### 2、flex-grow 子元素放大比例
 定义子元素的放大比例，默认是`0`即如果存在剩余空间，也不放大。
 如果所有子元素的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个子元素的flex-grow属性为2，其他子元素都为1，则前者占据的剩余空间将比其他项多一倍。
@@ -110,13 +110,13 @@ stretch（默认值）：占满整个盒子（可能会使元素拉伸）。
 .children {
   flex-grow: <number>; /* default 0 */
 }
-![阮老师的图片](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071014.png)
+![阮老师的图片](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015071014.png)
 ### 3、flex-shrink 子元素缩小比例
 定义了子元素的缩小比例，默认为1，即如果空间不足，该子元素将缩小。
 如果所有子元素的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个子元素的flex-shrink属性为0，其他子元素都为1，则空间不足时，前者不缩小。
 
 负值对该属性无效。
-![阮老师的图片](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071015.jpg)
+![阮老师的图片](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015071015.jpg)
 ### 4、flex-basis 子元素父级的空间的宽度
 定义了在分配多余空间之前，子元素占据的父级空间（main size）。浏览器根据这个属性，计算盒子是否有多余空间。它的默认值为auto，即子元素的本来大小。 子元素的basis最大 等于父级宽度
 ```
@@ -142,4 +142,4 @@ align-self属性对单个子元素设置不一样的对齐方式，可覆盖alig
 }
 ```
 该属性可能取6个值，除了auto，其他都与align-items属性完全一致。
-![阮老师的图片](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071016.png)
+![阮老师的图片](https://www.ruanyifeng.com/blogimg/asset/2015/bg2015071016.png)

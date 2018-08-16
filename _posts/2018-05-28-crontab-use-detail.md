@@ -46,7 +46,7 @@ service crond status
 /etc/cron.d/ 这个目录用来存放任何要执行的crontab文件或脚本。
 我们还可以把脚本放在/etc/cron.hourly、/etc/cron.daily、/etc/cron.weekly、/etc/cron.monthly目录中，让它每小时/天/星期、月执行一次。
 ## 计划任务使用
-### 分时年月周
+### 分时日月周
 在crontab文件中一个有六个域，前五个是时间后面是要执行的命令
 ### 特殊符号*、/、-、和,
 *表示所有的取值范围内的数字
@@ -59,7 +59,7 @@ service crond status
 ### 实例
 实例1：每1分钟执行一次command
 命令：
-* * * * * command
+\* * * * * command
 
 实例2：每小时的第3和第15分钟执行
 命令：
@@ -99,11 +99,11 @@ service crond status
 
 实例11：每一小时重启smb 
 命令：
-* */1 * * * /etc/init.d/smb restart
+\* */1 * * * /etc/init.d/smb restart
 
 实例12：晚上11点到早上7点之间，每隔一小时重启smb 
 命令：
-* 23-7/1 * * * /etc/init.d/smb restart
+\* 23-7/1 * * * /etc/init.d/smb restart
 
 实例13：每月的4号与每周一到周三的11点重启smb 
 命令：
